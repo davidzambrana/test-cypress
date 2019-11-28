@@ -6,8 +6,8 @@
   "scripts": {
     "open": "cypress open",
     "test": "cypress run",
-    "test:bug": "cypress-tags run -e TAGS='not @first'",
-    "test:first": "cypress-tags run -e TAGS='@first'"
+    "test:bug": "echo $HOME && cypress-tags run -e TAGS='not @production'",
+    "test:first": "cypress-tags run -e TAGS='@production'"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/step_definitions",
