@@ -1,0 +1,26 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "public repo to test issues",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run",
+    "test:bug": "cypress-tags run -e TAGS='not @production'"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions",
+    "nonGlobalStepDefinitions": false
+  },
+  "author": "sah-qa",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^3.6.1",
+    "cypress-cucumber-preprocessor": "^1.6.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-cypress": "^2.6.1",
+    "moment": "^2.24.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  }
+}
