@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+# https://docs.npmjs.com/cli/shrinkwrap#caveats
+node_modules
+
+# Cypress
+*.mp4
+cypress/screenshots
+
+# Jet Brains
+.idea/
+
+# Debug log from npm
+npm-debug.log
+
+# OS X
+.DS_Store
+/keyrings/live/pubring.gpg~
+/keyrings/live/pubring.kbx~
+/keyrings/live/secring.gpg
