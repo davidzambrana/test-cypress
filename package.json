@@ -1,13 +1,13 @@
 {
   "name": "test-repo",
   "version": "1.0.0",
-  "description": "public repo to test issues",
+  "description": "public repo to test Cypress issues",
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
     "test": "cypress run",
-    "test:bug": "echo $HOME && cypress-tags run -e TAGS='not @production'",
-    "test:first": "cypress-tags run -e TAGS='@production'"
+    "test:avoid": "cypress-tags run -e TAGS='not @third'",
+    "test:only": "cypress-tags run -e TAGS='@third'"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/step_definitions",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^3.7.0",
-    "cypress-cucumber-preprocessor": "^1.6.0",
+    "cypress-cucumber-preprocessor": "^1.17.0",
     "eslint": "^4.19.1",
     "eslint-plugin-cypress": "^2.6.1",
     "moment": "^2.24.0",
