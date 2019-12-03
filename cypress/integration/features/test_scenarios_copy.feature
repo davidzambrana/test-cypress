@@ -22,7 +22,7 @@ Feature: Test scenarios
         When I visit the RAE website
         Then I should be able to see the footer
 
-    @production
+    @third
     Scenario: Visits RAE and is able to see the branding wrapper
         When I visit the RAE website
         Then I should be able to see the branding wrapper
