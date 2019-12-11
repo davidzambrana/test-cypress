@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-  echo "Running Cypress with local values..."
-  eval "$@"
-
-
+echo "Running eval..."
+eval "$@"
