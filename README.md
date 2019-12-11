@@ -24,9 +24,13 @@ To install the dependencies just run `yarn` or `npm install`
 ## Running the tests
 
 `yarn open` to open Cypress
+
 `yarn test` to run the whole collection
+
 `yarn test:not` to test `-e TAGS='not @skip'`
+
 `yarn test:error` to test the error output
+
 `yarn test:label` to test `-e TAGS='@skip'`
 
 ## Versioning
