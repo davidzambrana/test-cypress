@@ -6,8 +6,9 @@
   "scripts": {
     "open": "cypress open",
     "test": "cypress run",
-    "test:avoid": "cypress-tags run -e TAGS='not @third'",
-    "test:only": "cypress-tags run -e TAGS='@third'"
+    "test:not": "cypress-tags run -e TAGS='not @skip'",
+    "test:error": "./scripts/run-local-task.sh cypress-tags run -e TAGS='not @skip'",
+    "test:label": "cypress-tags run -e TAGS='@skip'"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/step_definitions",
