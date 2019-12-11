@@ -14,8 +14,7 @@ Dependencies needed to be able to run the tests.
 macOS 10.9 and above (64-bit only)
 Linux Ubuntu 12.04 and above, Fedora 21 and Debian 8 (64-bit only)
 Windows 7 and above
-Node
-Yarn
+Node or yarn
 ```
 
 ### Installing
@@ -24,8 +23,11 @@ To install the dependencies just run `yarn` or `npm install`
 
 ## Running the tests
 
-There are two possible ways to run the tests, headed or headless. In case you want to go for headless run `yarn test` and they will run in the CLI. In case you want to go for the headed run, execute `yarn open`.
-The tests are not configured to be recorded and to upload the media to the Dashboard, even though it would be quite an easy step to achieve.
+`yarn open` to open Cypress
+`yarn test` to run the whole collection
+`yarn test:not` to test `-e TAGS='not @skip'`
+`yarn test:error` to test the error output
+`yarn test:label` to test `-e TAGS='@skip'`
 
 ## Versioning
 
